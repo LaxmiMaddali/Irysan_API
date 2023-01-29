@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validating",
+    "line": 1,
+    "id": "validating",
+    "tags": [],
+    "uri": "features/punkApi.feature",
+    "elements": [
+      {
+        "id": "validating;validating",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validating",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I call the punk api with beer id 192",
+            "match": {
+              "location": "steps/punkApi.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I expect a 200 status response",
+            "match": {
+              "location": "steps/punkApi.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "The malt is 'Extra Pale'",
+            "match": {
+              "location": "steps/punkApi.js:19"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "The malt value is 5.3 and the unit is 'kilograms'",
+            "match": {
+              "location": "steps/punkApi.js:23"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
